@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.checked {
+  color: #868e96;
+  text-decoration: line-through;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "rubik", serif;
+  background-color: white;
+}
+
+.container {
+  max-width: 30rem;
+  margin: 5rem auto;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background-color: #e9ecef;
+  border-radius: 12px;
+}
+
+.heading-section {
+  text-align: center;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #333;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  gap: 1rem;
+}
+
+.input-box {
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-box::placeholder {
+  color: #ced4da;
+}
+
+.input-box:focus {
+  border: 1px solid #fa5252;
+  color: #333;
+}
+
+.add-button {
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #fa5252;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #c92a2a;
+}
+
+.display-section {
+  width: 100%;
+}
+
+.task-list {
+  padding: 1rem;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.task-line {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  background-color: #ced4da;
+
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+}
+
+.task-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.task-button {
+  font-size: 1.6rem;
+  color: #000;
+  cursor: pointer;
+}
