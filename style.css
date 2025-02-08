@@ -83,13 +83,12 @@ body {
 }
 
 .task-list {
-  padding: 1rem;
   list-style: none;
 
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .task-line {
