@@ -1,6 +1,7 @@
 // Get DOM elements
 const taskInput = document.querySelector(".input-box");
 const addButton = document.querySelector(".add-button");
+const taskList = document.querySelector(".task-list");
 const displaySection = document.querySelector(".display-section");
 
 // Initialize tasks array
@@ -40,7 +41,7 @@ function renderTask(task) {
             </span>
   `;
 
-  displaySection.appendChild(taskLine);
+  taskList.appendChild(taskLine);
 
   // Add event listeners for buttons
   const checkBtn = taskLine.querySelector(".checkbox");
